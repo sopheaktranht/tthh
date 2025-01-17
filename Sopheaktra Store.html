@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopheaktra Store</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: #ee1d1d;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #e31414;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            display: none; /* Hidden by default */
+            padding: 20px;
+            text-align: center;
+        }
+        section.active {
+            display: block; /* Display active section */
+        }
+        footer {
+            background-color: #333;
+            color: #b41a1a;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        /* Product Section */
+        .product {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background-color: #f61e1e;
+            border: 1px solid #d71818;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(184, 8, 8, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our SOPEAKTRA Computer Store</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('shop')">Shop</a>
+            <a href="#" onclick="showSection('services')">Services</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+            <a href="#" onclick="showSection('login')">Login</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="active">
+        <h2>Home</h2>
+        <p>Welcome to our online store. We offer the best products at amazing prices!</p>
+        <img src="https://k1-ng-net.vercel.app/images/msi01.png" alt="Product 1">
+        <img src="https://k1-ng-net.vercel.app/images/asus11.jpg" alt="Product 1">
+        <img src="https://k1-ng-net.vercel.app/images/asus09.jpg" alt="Product 2"> 
+        <img src="https://k1-ng-net.vercel.app/images/asus08.jpg" alt="Product 4"> 
+        <img src="https://k1-ng-net.vercel.app/images/asus07.jpg" alt="Product 5"> 
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing high-quality computers and accessories for all your needs.</p>
+        <p>Exclusively imported directly from the manufacturer, covering all brands, with reliability, quality, excellent service, and safety guaranteed.</p>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Our Products</h2>
+        <div class="product">
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi01.png" alt="Product 1">
+                <h3>Computer 1</h3>
+                <p>$500</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi02.png" alt="Product 2">
+                <h3>Computer 2</h3>
+                <p>$700</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi03.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi03.jpg" alt="Product 4">
+                <h3>Computer 3</h3>
+                <p>$1250</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi04.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1500</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi05.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1655</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi07.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1690</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi08.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1715</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi09.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1745</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/msi011.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1816</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/asus01.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$1920</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://k1-ng-net.vercel.app/images/asus06.jpg" alt="Product 3">
+                <h3>Computer 3</h3>
+                <p>$2555</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer professional repairs, upgrades, and technical support for your devices.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <p>Email: Chansopheaktra696@gmail.com</p>
+        <p>Phone: 0712107180</p>
+        <p>Address: Robas Pring Village, Svay Ya Commune, Svay Chrum District, Svay Rieng Province</p>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+            
+        </form>
+    </section>
+
+    <footer>
+        
+        <p>&copy; 2024 Online Store. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+            
